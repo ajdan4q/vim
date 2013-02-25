@@ -104,6 +104,10 @@ let NERDTreeAutoCenter=1
 "cs comment sexily
 "help nerd_commenter
 
+"c.vim
+" set 'c' and 'cpp' file only
+let g:C_MapLeader=","
+
 " vundle 
 filetype off                   " required!
 
