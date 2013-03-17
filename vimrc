@@ -4,16 +4,36 @@ filetype plugin indent on
 
 autocmd filetype sh setlocal smartindent ts=8 shiftwidth=8
 autocmd filetype c  setlocal cindent ts=8 shiftwidth=8
+autocmd filetype python setlocal si ts=8 shiftwidth=8 expandtab
 
-"tabstop 一个tab计算多少空格
-"shiftwidth 缩进多少个空格
-"expandtab  使用多少个空格来代替tab
-"
+" backspace behavior
+set backspace=indent,eol,start
+
+" auto change directory
+set autochdir
+
+"file encoding
+set fileencodings=utf-8,gbk,gb2312,gb18030
+
 "set tab ..etc
 set list
 set listchars=tab:>-,extends:>,precedes:<
 
 set incsearch
+
+set textwidth=79
+
+"color scheme
+colorscheme desert
+
+" gui setting (gvim)
+if has("gui")
+	set guioptions-=T	"Hide toolbar
+	set guioptions-=m	"Hide menu
+	set guioptions-=r	"Disable right-hand scrollbar
+	set guioptions-=l	"Disable left-hand scrollbar
+	set guioptions-=L	"Disable left-hand scrollbar
+endif
 
 "no beep or flash
 set vb t_vb=
@@ -58,6 +78,9 @@ nnoremap <silent> <leader>hs :/\s\+$/<cr>
 " window size
 nnoremap <silent> <leader>wp CTRL-W +
 nnoremap <silent> <leader>wd CTRL-W -
+
+" move to head of character
+nnoremap <silent> 0 ^
 
 " ctags
 "
