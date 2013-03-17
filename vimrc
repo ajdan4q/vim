@@ -24,7 +24,7 @@ set incsearch
 set textwidth=79
 
 "color scheme
-colorscheme desert
+"colorscheme desert
 
 " gui setting (gvim)
 if has("gui")
@@ -128,10 +128,16 @@ let NERDTreeAutoCenter=1
 "help nerd_commenter
 
 "c.vim
+"
 " set 'c' and 'cpp' file only
 let g:C_MapLeader=","
 
+" neocomplcache (because configure is very long)
+"
+source ~/.neocomplcache_vimrc
+
 " vundle
+"
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -161,6 +167,7 @@ Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
 Bundle 'taglist.vim'
 Bundle 'c.vim'
+Bundle 'neocomplcache'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
