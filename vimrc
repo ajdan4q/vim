@@ -4,7 +4,7 @@ filetype plugin indent on
 
 autocmd filetype sh setlocal smartindent ts=8 shiftwidth=8
 autocmd filetype c  setlocal cindent ts=8 shiftwidth=8
-autocmd filetype python setlocal si ts=8 shiftwidth=8 expandtab
+autocmd filetype python setlocal si ts=4 shiftwidth=4 expandtab
 
 " backspace behavior
 set backspace=indent,eol,start
@@ -131,7 +131,7 @@ let NERDTreeAutoCenter=1
 " set 'c' and 'cpp' file only
 let g:C_MapLeader=","
 
-" vundle 
+" vundle
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -148,7 +148,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'nelson/cscope_maps'
-" vim-scripts repos 
+" vim-scripts repos
 " https://github.com/vim-scripts/xxx
 Bundle 'L9'
 Bundle 'FuzzyFinder'
