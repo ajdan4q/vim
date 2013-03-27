@@ -3,8 +3,12 @@ syntax on
 filetype plugin indent on
 
 autocmd filetype sh setlocal smartindent ts=8 shiftwidth=8
+autocmd filetype python setlocal si ts=4 sts=4 shiftwidth=4 expandtab
 autocmd filetype c  setlocal cindent ts=8 shiftwidth=8
-autocmd filetype python setlocal si ts=4 shiftwidth=4 expandtab
+
+" cmd history
+" set nohis
+" set history 20
 
 " backspace behavior
 set backspace=indent,eol,start
@@ -14,26 +18,24 @@ set autochdir
 
 "file encoding
 set fileencodings=utf-8,gbk,gb2312,gb18030
+" set or change file encoding
+"set fileencoding=utf-8
 
 "set tab ..etc
 set list
 set listchars=tab:>-,extends:>,precedes:<
 
+" text search setting
+set hlsearch
 set incsearch
+
+" highligh (win) or under_line (linux) current line
+" setlocal cursorline
 
 set textwidth=79
 
 "color scheme
 "colorscheme desert
-
-" gui setting (gvim)
-if has("gui")
-	set guioptions-=T	"Hide toolbar
-	set guioptions-=m	"Hide menu
-	set guioptions-=r	"Disable right-hand scrollbar
-	set guioptions-=l	"Disable left-hand scrollbar
-	set guioptions-=L	"Disable left-hand scrollbar
-endif
 
 "no beep or flash
 set vb t_vb=
@@ -132,9 +134,25 @@ let NERDTreeAutoCenter=1
 " set 'c' and 'cpp' file only
 let g:C_MapLeader=","
 
+"a.vim - switch between .c and .h
+"
+":A "swap file
+
 " neocomplcache (because configure is very long)
 "
 source ~/.neocomplcache_vimrc
+
+" matchit
+"
+
+" lookupfile
+"
+
+" surround
+"
+
+" snipMate
+"
 
 " vundle
 "
@@ -151,13 +169,14 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 " https://github.com/xxx
-Bundle 'tpope/vim-fugitive'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'nelson/cscope_maps'
+"Bundle 'shougo/neocomplcache'
 " vim-scripts repos
 " https://github.com/vim-scripts/xxx
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 Bundle 'autotags'
 Bundle 'bufexplorer.zip'
 Bundle 'cscope.vim'
@@ -168,8 +187,15 @@ Bundle 'The-NERD-tree'
 Bundle 'taglist.vim'
 Bundle 'c.vim'
 Bundle 'neocomplcache'
+Bundle 'matchit.zip'
+Bundle 'a.vim'
+Bundle 'surround.vim'
+Bundle 'lookupfile'
+Bundle 'genutils'
+"Bundle 'snipMate'
+"Bundle 'VimPdb'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
 " ...
 "
 filetype plugin indent on     " required!
