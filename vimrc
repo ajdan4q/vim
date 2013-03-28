@@ -192,6 +192,8 @@ Bundle 'a.vim'
 Bundle 'surround.vim'
 Bundle 'lookupfile'
 Bundle 'genutils'
+"need 0.11 but has 0.10
+"Bundle 'vim-ipython'
 "Bundle 'snipMate'
 "Bundle 'VimPdb'
 " non github repos
