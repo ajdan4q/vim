@@ -155,7 +155,10 @@ source ~/.neocomplcache_vimrc
 "
 
 " vundle
+<<<<<<< HEAD
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+=======
+>>>>>>> deb6233b788b9acf30d1c71baa5f6c868cf16c0d
 "
 filetype off                   " required!
 
@@ -193,7 +196,11 @@ Bundle 'a.vim'
 Bundle 'surround.vim'
 Bundle 'lookupfile'
 Bundle 'genutils'
+<<<<<<< HEAD
 Bundle 'vim-ipython'
+=======
+"Bundle 'vim-ipython'
+>>>>>>> deb6233b788b9acf30d1c71baa5f6c868cf16c0d
 "Bundle 'snipMate'
 "Bundle 'VimPdb'
 " non github repos
